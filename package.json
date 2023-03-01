@@ -1,0 +1,22 @@
+{
+  "name": "labecommerce-backend",
+  "version": "1.0.0",
+  "description": "Projeto labecommerce-backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js bananinha",
+    "bananinha": "node ./index.js bananinha",
+    "parEimpar": "node ./parEimpar.js par 5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandersonGit/labecommerce-backend.git"
+  },
+  "author": "sanderson_luiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SandersonGit/labecommerce-backend/issues"
+  },
+  "homepage": "https://github.com/SandersonGit/labecommerce-backend#readme"
+}
