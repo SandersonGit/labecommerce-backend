@@ -25,3 +25,25 @@ VALUES
 ("3", "Carrinho", 35.00, "Brinquedo"),
 ("4", "Boneca", 80.00, "Brinquedo"),
 ("5", "Vestido", 150.00, "roupas");
+
+CREATE TABLE purchases (
+    id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    total_price REAL NOT NULL,
+    paid INTEGER NOT NULL,
+    created_at TEXT,
+    buyer_id TEXT NOT NULL,
+    FOREIGN KEY (buyer_id) REFERENCES users(id)
+);
+
+DROP TABLE purchases;
+
+INSERT INTO purchases
+VALUES
+("p001", 350.00, 0, "17/04/2023", "1"),
+("p002", 125.00, 0, "17/04/2023", "1"),
+("p003", 200.00, 0, "17/04/2023", "2"),
+("p004", 188.00, 0, "17/04/2023", "2");
+
+SELECT * FROM users 
+INNER JOIN purchases 
+ON buyer_id = users.id;
