@@ -1,11 +1,6 @@
 
 import express, { Request, Response } from "express";
 import cors from "cors";
-import { Cavaleiro } from "./types";
-
-// console.log(users);
-// console.log(products);
-// console.log(purchases);
 
 const app = express();
 
